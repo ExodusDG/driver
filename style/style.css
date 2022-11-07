@@ -1222,6 +1222,12 @@ footer a {
     .footerBottomLeft {
         flex-wrap: wrap;
     }
+    .welcomeRight {
+        height: 250px;
+    }
+    .welcomeRight {
+        height: auto !important;
+    }
 }
 
 @media (max-width: 431px) {
@@ -1230,6 +1236,12 @@ footer a {
     }
     .navbarBookButton {
         width: 74px;
+    }
+    .welcomeRight {
+        height: auto;
+    }
+    .welcomeSwiper {
+        height: 200px;
     }
 }
 
@@ -2447,7 +2459,6 @@ footer a {
 
 .headerSlider .swiper-slide img {
     width: 100%;
-    filter: brightness(0.4);
 }
 
 .headerSlideMask {
@@ -2906,5 +2917,38 @@ h1 {
     }
     .reviewItem {
         width: 100%;
+    }
+}
+
+@media (max-height: 768px) {
+    .headerSlider {
+        height: 600px;
+    }
+}
+
+@media (max-width: 430px) {
+    .headerSlider {
+        height: 350px;
+    }
+    .headerSlider .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .headerAdvantagesTitle {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 391px) {
+    .headerSlider {
+        height: 300px;
+    }
+    .cardsItem {
+        height: 150px;
+    }
+    .cardsItemHidden {
+        height: 75px;
+        padding-top: 15px;
     }
 }
