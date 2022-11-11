@@ -7,8 +7,8 @@
 }
 
 :root {
-    --BlueColor: #040720;
-    --YellowColor: #EEE0D0
+    --BlueColor: #222;
+    --YellowColor: #8d6242
 }
 
 ul,
@@ -448,7 +448,7 @@ h1 {
 }
 
 .mainButton {
-    background: var(--BlueColor);
+    background: var(--YellowColor);
     text-decoration: none;
     color: #EEE0D0;
     text-transform: uppercase;
@@ -636,7 +636,7 @@ h1 {
 }
 
 .swiperNav button:hover {
-    background: var(--BlueColor);
+    background: var(--YellowColor);
 }
 
 .swiperNav button:hover .swiperButtonArrow {
@@ -2556,7 +2556,7 @@ h1 {
 .cardsItemHidden {
     width: 100%;
     height: 125px;
-    background: #040720;
+    background: var(--YellowColor);
     position: absolute;
     bottom: -100%;
     text-align: center;
@@ -2907,6 +2907,7 @@ h1 {
         display: block;
         justify-content: space-between;
         align-items: center;
+        max-width: 100%;
     }
     .refNames {
         width: 100%;
@@ -2951,4 +2952,566 @@ h1 {
         height: 75px;
         padding-top: 15px;
     }
+}
+
+.aboutHeader {
+    height: calc(100vh - 83px);
+    background: url('../images/driver/about/Privatedriver-yacht.jpg');
+    background-size: cover;
+}
+
+.advantages>.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantages>.container>div {
+    width: 45%;
+}
+
+.advantages {
+    padding-top: 96px;
+    padding-bottom: 126px;
+    background: #F5F4F2;
+}
+
+.advantagesText p {
+    margin-bottom: 15px;
+}
+
+.advStatItem {
+    margin-top: 40px;
+}
+
+.advStatLine {
+    margin-top: 10px;
+    width: 100%;
+    height: 14px;
+    background: white;
+}
+
+.advStatFill {
+    width: 0%;
+    height: 100%;
+    background: var(--YellowColor);
+    transition: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.advStatFillFull .advStatFill {
+    width: 100% !important;
+}
+
+.advantagesText .mainButton {
+    top: 50px;
+    position: relative;
+}
+
+.advantagesText p {
+    line-height: 1.6;
+}
+
+.driver {
+    padding-top: 96px;
+    padding-bottom: 20x;
+    background: white;
+}
+
+.driverBlock {
+    height: 320px;
+}
+
+.driverBlocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.driverBlock img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.driverBlock>div {
+    background: #F5F4F2;
+    padding: 20px;
+    text-align: center;
+}
+
+.driverBlock>div>p {
+    font-weight: 700;
+}
+
+.driverBlockText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.driverLine {
+    width: 50px;
+    height: 1px;
+    background: #002339;
+}
+
+.driverBlockText span {
+    margin-right: 10px;
+    margin-left: 10px;
+    opacity: 0.5;
+}
+
+.driverBlocks {
+    margin-top: 50px;
+}
+
+.driverBlockMask {
+    width: 100%;
+    background: black !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 230px;
+    padding: 0 !important;
+    opacity: 1;
+}
+
+.driverBlock {
+    position: relative;
+}
+
+.driverBlockMask i {
+    color: white;
+    font-size: 24px;
+}
+
+.driverBlockMask {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.driverBlock:hover .driverBlockMask {
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .advantages>.container {
+        display: block;
+    }
+    .advantages>.container>div {
+        width: 100%;
+    }
+    .advantagesText {
+        margin-top: 50px;
+    }
+    .driverBlocks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 491px) {
+    .aboutHeader {
+        height: 500px;
+    }
+    .driverBlocks {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 431px) {
+    .aboutHeader {
+        height: 400px;
+    }
+}
+
+.reservationHeader {
+    background: url('../images/driver/reservations/private-driver-sbh3.jpg');
+    background-size: cover;
+}
+
+.icons {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.iconsList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.iconListIcon {
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    border: 2px solid #e6e9ea;
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.iconListIcon:hover {
+    background: var(--YellowColor);
+}
+
+.iconListIcon:hover .iconStyle {
+    color: white;
+}
+
+.iconStyle {
+    font-size: 34px;
+    color: var(--BlueColor);
+    transition: 0.3s;
+}
+
+.iconListItem {
+    text-align: center;
+}
+
+.iconListTitle {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.iconListText {
+    color: #002339ab;
+    line-height: 1.6;
+}
+
+.reservation {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    background: #F5F4F2;
+}
+
+.headerSubtitle {
+    margin-top: 10px;
+    width: 70%;
+    line-height: 1.6;
+}
+
+.reserwationsSwiper {
+    height: 600px;
+    width: 600px;
+    position: relative;
+}
+
+.reserwationsSwiper .swiperNav {
+    left: 20px;
+}
+
+.reservationBlock {
+    margin-top: 50px;
+}
+
+.reservationForm input,
+textarea {
+    border: 1px solid var(--BlueColor);
+    height: 50px;
+    outline: none;
+    font-family: 'Greycliff';
+    font-weight: 400;
+    color: #002339;
+    padding-left: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.reservationBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reservationSlider {
+    width: 48%;
+}
+
+.reservationForm {
+    width: 40%;
+}
+
+.reservationTitile {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.reservationForm textarea {
+    padding-top: 10px;
+}
+
+
+/* INFO */
+
+.info {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.infoBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoBlock img {
+    width: 500px;
+}
+
+.infoBlock>div {
+    width: 40%;
+}
+
+.infoBlockDesc {
+    line-height: 1.6;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.infoBlock h1 {
+    margin-bottom: 20px;
+}
+
+.blockReverse {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 1025px) {
+    .iconsList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .reservationBlock {
+        display: block;
+    }
+    .reservationForm {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .reservationSlider {
+        width: 100%;
+    }
+    .infoBlock {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .infoBlock>div {
+        width: 100%;
+    }
+    .infoBlock img {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .reserwationsSwiper {
+        width: 100%;
+        position: relative;
+    }
+    .reserwationsSwiper .swiper-slide img {
+        width: 100%;
+    }
+    .reservationForm input,
+    textarea {
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 491px) {
+    .iconsList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .reserwationsSwiper {
+        height: 400px;
+    }
+}
+
+@media (max-width: 391px) {
+    .headerSubtitle {
+        width: 100%;
+    }
+    .reserwationsSwiper {
+        height: 300px;
+    }
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+.contactAdressText {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact .reservationBlock {
+    align-items: flex-start !important;
+}
+
+.contactNames .refNames {
+    margin: 0 auto;
+    text-align: center;
+    height: 300px;
+}
+
+.contactNames h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.whatsApp {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.whatsApp svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.whatsApp a {
+    text-decoration: none;
+}
+
+.whatsApp p {
+    margin-bottom: 0;
+}
+
+.reservationSubmit {
+    border: 2px solid var(--YellowColor);
+    cursor: pointer;
+}
+
+.nameSliderImage img {
+    width: 555px;
+}
+
+.namesSwiper {
+    height: 560px;
+}
+
+.namesSwiper .swiper-slide p {
+    color: #ddb63d;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 49%;
+}
+
+@media (max-width: 1025px) {
+    .nameSliderImage img {
+        width: 100% !important;
+    }
+    .nameSliderImage {
+        position: relative;
+    }
+    .namesSwiper .swiper-slide p {
+        top: 47%;
+    }
+    .namesSwiper {
+        height: 460px;
+    }
+}
+
+.contactNames .refNames {
+    margin: 0 auto;
+    text-align: center;
+    height: 700px;
+}
+
+@media (max-width: 768px) {
+    .faqWrapper {
+        display: block;
+    }
+    .refNames {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .namesSwiper {
+        height: 560px;
+    }
+    .faqBlock {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px;
+        margin-top: 50px;
+        text-align: left;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 491px) {
+    .namesSwiper {
+        height: 360px;
+    }
+    .contactNames .swiper-slide p {
+        font-size: 32px;
+        padding-top: 5px;
+    }
+}
+
+@media (max-width: 430px) {
+    .namesSwiper .swiper-slide p {
+        font-size: 28px;
+        padding-top: 3px;
+    }
+    .contactNames .refNames {
+        margin: 0 auto;
+        text-align: center;
+        height: 500px;
+    }
+}
+
+@media (max-width: 430px) {
+    .namesSwiper .swiper-slide p {
+        font-size: 28px;
+        padding-top: 3px;
+    }
+}
+
+@media (max-width: 391px) {
+    .namesSwiper .swiper-slide p {
+        font-size: 24px;
+        padding-top: 3px;
+    }
+    .namesSwiper {
+        height: 250px;
+    }
+    .faqItemVisible p {
+        font-size: 14px;
+    }
+    .faqItemAnswer p {
+        font-size: 14px;
+    }
+}
+
+.smallText {
+    font-size: 16px;
+}
+
+@media (max-width: 491px) {
+    .smallText {
+        font-size: 20px !important;
+        padding-top: 8px !important;
+    }
+}
+
+@media (max-width: 414px) {
+    .smallText {
+        font-size: 16px !important;
+        padding-top: 8px !important;
+    }
+}
+
+.swiper-slide img {
+    height: 100%;
 }

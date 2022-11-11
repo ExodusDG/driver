@@ -47,6 +47,19 @@ const namesSwiper = new Swiper('.namesSwiper', {
     },
 });
 
+const reserwationsSwiper = new Swiper('.reserwationsSwiper', {
+    direction: 'horizontal',
+    loop: true,
+    draggable: true,
+    navigation: {
+        nextEl: '.swiperNextHeader',
+        prevEl: '.swiperPrevHeader',
+    },
+    autoplay: {
+        delay: 3000,
+    },
+});
+
 $.each($('.faqItem'), function() {
     var hiddenHeight = $(this).find('.faqItemVisible').height();
     var visibleHeight = $(this).find('.faqItemAnswer').height();
